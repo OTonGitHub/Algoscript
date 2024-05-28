@@ -1,6 +1,8 @@
 # Algoscript
 Data Structures and Algorithms done in TypeScript/JS run on NodeJS.
 
+![TypeScript Compilation](https://github.com/OTonGitHub/Algoscript/actions/workflows/ts.node.js.yml/badge.svg)
+
 ### Requires
 - Node.JS v22 with NPM
 - `npm install -g typescript`
