@@ -63,3 +63,7 @@ display(arr);
 display(arr8);
 display(arr16);
 display('\n')
+
+// arrays don't insert, it overrides or set it,
+// this is fundamentally how it is searched and inserted and hence formed and cannot be inserted because of that.
+// cannot grow, hence other data structures exist.
