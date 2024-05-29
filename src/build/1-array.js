@@ -17,7 +17,7 @@ let offset = intSize * index;
 let memoryBitLocation = arrayStartLocation + offset;
 display(`Memory Locaiton of Index[1] in Such an Array -> ${memoryBitLocation}\n`);
 // this gives some thoughts on why index starts at 0 in compsci.
-// as well as why arrays comprise of a single type, (not referring to abstracted versions like lists).
+// as well as why arrays compromise of a single type, (not referring to abstracted versions like lists).
 // very simple stuff so far, you'd need to give array meaning,
 const arr = new ArrayBuffer(6); // this is the actual array
 display(arr);

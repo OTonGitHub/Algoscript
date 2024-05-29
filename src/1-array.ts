@@ -1,6 +1,6 @@
 console.log("--- 1-array.ts ---");
 const display = console.log;
-// javascript may morph data structures, like a big array with single unrealisitaclly big number.
+// javascript may morph data structures, like a big array with single unrealistically big number.
 
 // if set an array of 12 bytes,
 // then decide it's an array of 32-bit ints.
@@ -21,10 +21,10 @@ const arrayStartLocation = 0;
 let offset = intSize * index
 
 let memoryBitLocation =  arrayStartLocation + offset;
-display(`Memory Locaiton of Index[1] in Such an Array -> ${memoryBitLocation}\n`);
+display(`Memory Location of Index[1] in Such an Array -> ${memoryBitLocation}\n`);
 
-// this gives some thoughts on why index starts at 0 in compsci.
-// as well as why arrays comprise of a single type, (not referring to abstracted versions like lists).
+// this gives some thoughts on why index starts at 0 in comp-sci.
+// as well as why arrays compromise of a single type, (not referring to abstracted versions like lists).
 // very simple stuff so far, you'd need to give array meaning,
 
 const arr = new ArrayBuffer(6); // this is the actual array
@@ -67,3 +67,20 @@ display('\n')
 // arrays don't insert, it overrides or set it,
 // this is fundamentally how it is searched and inserted and hence formed and cannot be inserted because of that.
 // cannot grow, hence other data structures exist.
+// in deletion, think about how null works, its basically, 0th value, named way for "not something" but it's something.
+
+// Big O of Accessing Arrays?
+// O = arr + width * offset.
+// there does-not seem to be any growth of compute even if index increase,
+// so it must be O(1).
+// compared to something like O(2^n), where on every call, it recursively doubles to compute,
+
+// this is very fast and instantaneous, on the 'kernel' level, just run the math, take from memory.
+// but how using the address it is taken from memory instantly, I do not know,
+// perhaps it's some sort of grid/map access, so technically no matter where the data, it would be
+// the same time for all, actual positional data. Perhaps this is how indexing in DB kinda works?
+
+// best example is in class language like C, look how program starts main(int argc, char* argv[])
+// needs count of arguments, to set array size to receive arguments from the commandline.
+// so javascript arrays, ain't actually arrays, does use memory buffer underneath, but
+// probably just uses some kind of maps underneath and algorithms to optimize based on data.
