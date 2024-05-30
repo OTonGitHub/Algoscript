@@ -18,3 +18,4 @@ Data Structures and Algorithms done in TypeScript/JS run on NodeJS.
 
 ## TODO
 - add in-file support for testing and running code, compile and run tests.
+- can be updated based on the katas, but don't use seperation.
