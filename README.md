@@ -15,3 +15,6 @@ Data Structures and Algorithms done in TypeScript/JS run on NodeJS.
 - then just run using `clear && node src/build/file` from the build folder.
 
 *note: just keep one shell running for the build process, the other to run node*
+
+## TODO
+- add in-file support for testing and running code, compile and run tests.
