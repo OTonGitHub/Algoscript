@@ -1,9 +1,23 @@
-console.log("--- 1-array.ts ---");
+console.log('-- SUMMARY START--');
+const arr_x = new ArrayBuffer(4);
+const arr_int8 = new Int8Array(arr_x);
+const arr_int16 = new Int16Array(arr_x);
+arr_int8[0] = 69;
+console.log('INSERT ARR_8 POSITION 0');
+console.log(arr_int8);
+console.log(arr_int16);
+console.log('INSERT ARR_16 POSITION 1');
+arr_int16[1] = 69;
+console.log(arr_int8);
+console.log(arr_int16);
+console.log('-- SUMMARY END   --\n');
+console.log('--- 1-array.ts ---');
 const display = console.log;
 // javascript may morph data structures, like a big array with single unrealistically big number.
 // if set an array of 12 bytes,
 // then decide it's an array of 32-bit ints.
 // then it effectively  holds 3 numbers,
+// because each int takes 4 bytes, divided by total 12 bytes, is 3.
 const memoryChunkBytes = 12;
 const intSize = 32;
 const memoryChunkBits = memoryChunkBytes * 8;
